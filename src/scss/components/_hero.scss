@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 22.7rem 0;
+  padding: 22.7rem 0 !important;
   border-radius: 0 0 5rem 5rem;
 
   margin-bottom: 10rem;
@@ -43,7 +43,7 @@
 
 .hero--about {
   background-image: url("./../img/hero-about.webp");
-  padding-top: 25.8rem;
+  padding-top: 25.8rem !important;
   .hero__title {
     font-size: 5.6rem;
     margin-bottom: 2.9rem;

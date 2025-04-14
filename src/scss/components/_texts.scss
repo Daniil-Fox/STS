@@ -4,6 +4,10 @@
   font-size: 7rem;
   line-height: 100%;
   color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
 }
 .title2 {
   margin: 0;
@@ -11,6 +15,10 @@
   font-size: 5rem;
   line-height: 110%;
   color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
 }
 .title3 {
   margin: 0;
@@ -18,6 +26,22 @@
   font-size: 4rem;
   line-height: 110%;
   color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
+}
+.title4 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
 }
 .subtitle1 {
   margin: 0;
@@ -62,14 +86,14 @@
   ul {
     margin: 0;
     padding: 0;
-    padding-left: 0.9rem;
+    line-height: 1.5;
+    padding-left: 2.7rem;
     li {
-      position: relative;
       &::marker {
-        font-size: 40%;
+        font-size: 50%;
       }
       &:not(:last-child) {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.5rem;
       }
     }
     &:not(:last-child) {

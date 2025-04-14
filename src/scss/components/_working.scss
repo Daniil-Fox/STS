@@ -1,0 +1,30 @@
+.working {
+  margin-top: 5rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+  padding-top: 9rem;
+
+  &:nth-last-child(2) {
+    margin-bottom: 5rem;
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__item {
+    background: var(--30-black);
+    padding: 5.4rem 6rem;
+    padding-bottom: 5.2rem;
+    border-radius: 5rem;
+  }
+
+  &__capture {
+    margin-bottom: 1.8rem;
+  }
+}

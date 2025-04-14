@@ -70,9 +70,10 @@
 }
 
 section {
-  &:not(:first-child) {
-    padding: 10rem 0;
-  }
+  padding: 10rem 0;
+  // &:first-child {
+  //   padding: 0;
+  // }
 }
 
 .control {
@@ -131,6 +132,7 @@ section {
   &__right {
     grid-column: 7 span;
   }
+
   &--2 {
     .wblock__left {
       grid-column: 6 span;
@@ -138,6 +140,24 @@ section {
 
     .wblock__right {
       grid-column: 6 span;
+    }
+  }
+
+  &--48 {
+    .wblock__left {
+      grid-column: 4 span;
+    }
+    .wblock__right {
+      grid-column: 8 span;
+    }
+  }
+
+  &--39 {
+    .wblock__left {
+      grid-column: 3 span;
+    }
+    .wblock__right {
+      grid-column: 9 span;
     }
   }
 }
