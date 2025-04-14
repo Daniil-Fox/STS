@@ -1,0 +1,137 @@
+.form {
+  --offset: 0.8rem;
+  &__row {
+    display: flex;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+  &__field {
+    overflow: hidden;
+    flex: 1;
+    position: relative;
+    span,
+    label {
+      position: absolute;
+      z-index: 2;
+      left: 2.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 100%;
+      color: var(--grey-4);
+      transition: 0.2s ease-in;
+    }
+
+    &--filled {
+      span,
+      label {
+        color: var(--grey-4);
+        transform: translateY(0) !important;
+        top: var(--offset) !important;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 6rem;
+
+    padding: 1.5rem 2.2rem;
+    background-color: var(--grey-1);
+    border-radius: 2.2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 100%;
+    color: var(--cold-black);
+    border: 1px solid var(--grey-1);
+    resize: none;
+    &--area {
+      height: 10rem;
+      padding-top: 2.2rem;
+
+      & ~ label {
+        transform: translateY(0);
+        top: 2.2rem;
+      }
+    }
+    &:focus {
+      border-color: var(--cold-black);
+      outline: none;
+      & ~ span,
+      & ~ label {
+        transform: translateY(0);
+        top: var(--offset);
+        font-size: 1.2rem;
+      }
+    }
+    @include hover {
+      & ~ span,
+      & ~ label {
+        color: var(--grey4);
+      }
+    }
+
+    &.just-validate-error-field {
+      border-color: #b40000;
+    }
+  }
+  &__btn {
+    flex: 1;
+    width: 100%;
+    padding-top: 1.9rem;
+    padding-bottom: 1.7rem;
+    border-radius: 2.2rem;
+    &:not(:last-child) {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  small {
+    display: block;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: var(--cold-black);
+    a {
+      display: inline;
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 1.5rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.just-validate-error-label {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 100%;
+  color: #b40000;
+}

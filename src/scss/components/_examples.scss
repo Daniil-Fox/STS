@@ -1,0 +1,66 @@
+.examples {
+  padding-top: 9.2rem !important;
+  padding-bottom: 9.2rem !important;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 5.3rem;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__slider {
+    padding: 0 calc((100% - var(--content-width)) / 2);
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
+
+.ex-item {
+  display: flex;
+  flex-direction: column;
+  height: 48rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+  &__content {
+    flex-grow: 1;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    color: var(--cold-black);
+    margin-bottom: 1rem;
+  }
+  &__desc {
+    line-height: 1.45;
+  }
+  &__img {
+    max-height: 26rem;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100%;
+    border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-in;
+    will-change: max-height;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include hover {
+    .ex-item__img {
+      max-height: 28rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// ваш код
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.05);
+  background: var(--white);
+  border-radius: 0 0 5rem 5rem;
+  padding: 2rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: auto;
+    height: 5rem;
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    padding-top: 0.2rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__btn {
+    border-radius: 1.5rem;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+}

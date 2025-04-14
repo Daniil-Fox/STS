@@ -1,0 +1,143 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1.5rem;
+  padding: 1rem 3rem;
+
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+  text-align: right;
+  color: var(--cold-black);
+  background-color: var(--grey-1);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+  &--small {
+    font-size: 1.6rem;
+  }
+
+  &--white {
+    background-color: var(--white);
+    color: var(--cold-black);
+  }
+
+  &--blue {
+    color: var(--white);
+    background-color: var(--accent-blue);
+  }
+
+  @include hover {
+    color: var(--white);
+    background-color: var(--cold-black);
+  }
+  &:focus {
+    color: var(--white);
+    outline: none;
+    background-color: var(--cold-black);
+  }
+  &:active {
+    color: var(--white);
+    background-color: #192030;
+  }
+  &:disabled {
+    cursor: default;
+    color: var(--grey-3);
+    background-color: var(--grey-2);
+  }
+}
+
+.link {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: var(--cold-black);
+  transition: color 0.3s ease-in;
+
+  @include hover {
+    color: var(--accent-blue);
+  }
+  &:focus {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  &:active {
+    color: var(--accent-blue);
+  }
+  &:disabled {
+    color: var(--grey-3);
+  }
+}
+
+section {
+  &:not(:first-child) {
+    padding: 10rem 0;
+  }
+}
+
+.control {
+  display: flex;
+  gap: 5px;
+
+  &__btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+
+    color: var(--cold-black);
+    transition: 0.3s ease-in;
+
+    svg {
+      stroke: currentColor;
+    }
+    &--next {
+      transform: rotateY(180deg);
+    }
+
+    @include hover {
+      color: var(--white);
+      background-color: var(--cold-black);
+    }
+    &:focus {
+      color: var(--white);
+      outline: none;
+      background-color: var(--cold-black);
+    }
+    &:active {
+      color: var(--white);
+      background-color: #192030;
+    }
+  }
+}
+
+.wblock {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+
+  &--white {
+    background-color: #fff;
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+  &__left {
+    grid-column: 5 span;
+  }
+  &__right {
+    grid-column: 7 span;
+  }
+  &--2 {
+    .wblock__left {
+      grid-column: 6 span;
+    }
+
+    .wblock__right {
+      grid-column: 6 span;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.title1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 100%;
+  color: var(--cold-black);
+}
+.title2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 110%;
+  color: var(--cold-black);
+}
+.title3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  color: var(--cold-black);
+}
+.subtitle1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 110%;
+  color: var(--cold-black);
+}
+
+.capture1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 110%;
+  color: var(--accent-blue);
+}
+.capture2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 150%;
+  color: var(--cold-black);
+
+  &--normal {
+    font-weight: 400;
+  }
+}
+.desc1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: var(--cold-black);
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 0.9rem;
+    li {
+      position: relative;
+      &::marker {
+        font-size: 40%;
+      }
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.desc2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+  color: var(--cold-black);
+
+  &--150 {
+    line-height: 150%;
+  }
+}

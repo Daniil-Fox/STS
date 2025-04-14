@@ -1,0 +1,114 @@
+.footer {
+  padding: 6rem 0;
+  padding-top: 5.5rem;
+  background: var(--white);
+  border-radius: 5rem 5rem 0 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.6rem;
+  }
+
+  &__right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 19.8rem;
+    height: 7.3rem;
+    margin-bottom: 3.1rem;
+    margin-top: 0.5rem;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: right bottom;
+    }
+  }
+
+  &__left {
+    display: flex;
+    gap: 13.4rem;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 150%;
+    text-align: right;
+    color: var(--cold-black);
+    max-width: 67.7rem;
+  }
+
+  &__address {
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.1rem 2rem;
+    flex-wrap: wrap;
+    a {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    p {
+      margin: 0;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 120%;
+      color: var(--cold-black);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-weight: 400;
+    }
+    small {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 120%;
+      text-align: right;
+      color: var(--cold-black);
+    }
+  }
+}
+
+.footer-nav {
+  &__capture {
+    display: block;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1.7rem;
+      }
+      a {
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 120%;
+        text-align: center;
+        color: var(--cold-black);
+      }
+    }
+  }
+}
