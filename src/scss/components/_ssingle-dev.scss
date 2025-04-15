@@ -1,0 +1,66 @@
+.ssingle-dev {
+  &__content {
+    padding: 6.8rem 8rem;
+    background-color: var(--white);
+    border-radius: 5rem;
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__title {
+    line-height: 1.2;
+
+    &:not(:last-child) {
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &__desc {
+    ul,
+    ol {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &--pad {
+    padding-top: 5rem;
+
+    .ssingle-dev__desc {
+      ul,
+      ol {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &--new {
+    padding-top: 5rem;
+    .ssingle-dev__content {
+      padding-bottom: 7rem;
+    }
+    .ssingle-dev__desc {
+      ul,
+      ol {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

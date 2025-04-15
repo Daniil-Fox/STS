@@ -1,0 +1,80 @@
+.nds-wrapper {
+  margin-top: 4.6rem;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+.nds {
+  background-color: var(--white);
+  border-radius: 5rem;
+  padding-top: 9rem;
+  &--blocks {
+    padding-bottom: 6rem;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 15rem;
+  }
+  &__title {
+    margin-bottom: 3.5rem;
+
+    &--lm {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    ul,
+    ol {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    margin-bottom: 3.3rem;
+  }
+}
+
+.nds-steps {
+  &__title {
+    margin-bottom: 3.3rem;
+  }
+  &__item {
+    background: var(--30-black);
+    padding: 5.3rem 6rem;
+    overflow: hidden;
+    border-radius: 5rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__capture {
+    margin-bottom: 1.8rem;
+  }
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul,
+    ol {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

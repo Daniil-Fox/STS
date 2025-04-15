@@ -1,0 +1,37 @@
+.ssingle-hero {
+  background-image: url("./../img/designing.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 110rem;
+
+  padding-top: 33rem;
+  margin-bottom: 5rem;
+  border-radius: 0 0 5rem 5rem;
+  overflow: hidden;
+  &__content {
+    width: 100%;
+    max-width: 99.1rem;
+    background-color: var(--white);
+    padding: 6.6rem 8rem;
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 7rem;
+  }
+
+  &--const {
+    background-image: url("./../img/hero-const.webp");
+  }
+
+  &--eco {
+    background-image: url("./../img/hero-eco.webp");
+    padding-top: 29.2rem;
+    .ssingle-hero__content {
+      max-width: 84.5rem;
+    }
+  }
+}

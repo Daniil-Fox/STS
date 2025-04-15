@@ -19,6 +19,9 @@
   &--accent {
     color: var(--accent-blue);
   }
+  &--120 {
+    line-height: 120%;
+  }
 }
 .title3 {
   margin: 0;
@@ -35,7 +38,7 @@
   margin: 0;
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 110%;
   color: var(--cold-black);
 

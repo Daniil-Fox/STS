@@ -1,0 +1,31 @@
+.ssingle-per {
+  padding-top: 5.5rem;
+  &__content {
+    padding: 9.2rem 10rem;
+    padding-right: 7.5rem;
+  }
+  &__title {
+    margin-bottom: 3.6rem;
+  }
+  &__img {
+    position: relative;
+    border-radius: 5rem;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__desc {
+    ul,
+    ol {
+      li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

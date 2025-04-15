@@ -160,4 +160,21 @@ section {
       grid-column: 9 span;
     }
   }
+
+  &--75 {
+    .wblock__left {
+      grid-column: 7 span;
+    }
+    .wblock__right {
+      grid-column: 5 span;
+    }
+  }
+  &--84 {
+    .wblock__left {
+      grid-column: 8 span;
+    }
+    .wblock__right {
+      grid-column: 4 span;
+    }
+  }
 }

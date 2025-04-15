@@ -1,0 +1,44 @@
+.eco-text {
+  padding-top: 5.4rem;
+  &__img {
+    position: relative;
+    border-radius: 5rem;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__right {
+    padding: 7.5rem 5rem;
+    padding-bottom: 7.2rem;
+  }
+
+  &__desc {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul,
+    ol {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
