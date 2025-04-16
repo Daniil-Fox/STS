@@ -1,0 +1,44 @@
+.obtain-text {
+  padding-top: 5rem;
+  &__left {
+    padding: 9.6rem 10rem;
+    padding-bottom: 9.2rem;
+    padding-right: 7rem;
+  }
+
+  &__img {
+    border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    ul,
+    ol {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__container {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}

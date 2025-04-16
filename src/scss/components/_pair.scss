@@ -1,0 +1,22 @@
+.pair {
+  &__item {
+    background-color: var(--white);
+    padding: 7rem 8rem;
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 2.2rem;
+  }
+
+  &__desc {
+    font-size: 2rem;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

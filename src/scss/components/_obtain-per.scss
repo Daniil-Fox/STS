@@ -1,0 +1,71 @@
+.obtain-per {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 8.6rem;
+  padding-bottom: 9.1rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 4.2rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+
+    counter-reset: counter;
+
+    &:not(:last-child) {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__item {
+    counter-increment: counter;
+    grid-column: 6 span;
+
+    padding: 5.4rem 6rem;
+    padding-bottom: 5.2rem;
+    background: var(--30-black);
+    border-radius: 5rem;
+
+    &::before {
+      content: counter(counter);
+      display: block;
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 110%;
+      color: var(--accent-blue);
+    }
+    &:nth-child(10n + 7) {
+      grid-column: 3 span;
+    }
+    &:nth-child(10n + 8) {
+      grid-column: 9 span;
+    }
+  }
+
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul,
+    ol {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

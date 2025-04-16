@@ -515,6 +515,19 @@ section {
   line-height: 150%;
 }
 
+.text-block {
+  padding: 7.5rem 8rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+}
+.text-block p:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.text-block ul li:not(:last-child),
+.text-block ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .nav ul {
   list-style: none;
   margin: 0;
@@ -1771,6 +1784,9 @@ section {
 .ssingle-hero--eco .ssingle-hero__content {
   max-width: 84.5rem;
 }
+.ssingle-hero--obtain {
+  background-image: url("./../img/hero-obtain.webp");
+}
 
 .ssingle-dev__content {
   padding: 6.8rem 8rem;
@@ -1809,6 +1825,9 @@ section {
 .ssingle-dev--new .ssingle-dev__desc ul li:not(:last-child),
 .ssingle-dev--new .ssingle-dev__desc ol li:not(:last-child) {
   margin-bottom: 1rem;
+}
+.ssingle-dev--last {
+  padding-bottom: 5.2rem;
 }
 
 .ssingle-per {
@@ -2217,5 +2236,114 @@ section {
 }
 .nds-steps__desc ul li:not(:last-child),
 .nds-steps__desc ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.pair__item {
+  background-color: var(--white);
+  padding: 7rem 8rem;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+.pair__title {
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+.pair__desc {
+  font-size: 2rem;
+}
+.pair__desc p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.obtain-text {
+  padding-top: 5rem;
+}
+.obtain-text__left {
+  padding: 9.6rem 10rem;
+  padding-bottom: 9.2rem;
+  padding-right: 7rem;
+}
+.obtain-text__img {
+  border-radius: 5rem;
+  overflow: hidden;
+  position: relative;
+}
+.obtain-text__img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.obtain-text__desc p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.obtain-text__desc ul li:not(:last-child),
+.obtain-text__desc ol li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.obtain-text__container:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.obtain-per {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 8.6rem;
+  padding-bottom: 9.1rem;
+  background-color: var(--white);
+  border-radius: 5rem;
+  overflow: hidden;
+}
+.obtain-per__title {
+  margin-bottom: 4.2rem;
+}
+.obtain-per__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  counter-reset: counter;
+}
+.obtain-per__items:not(:last-child) {
+  margin-bottom: 4.4rem;
+}
+.obtain-per__item {
+  counter-increment: counter;
+  -ms-grid-column-span: 6;
+  grid-column: 6 span;
+  padding: 5.4rem 6rem;
+  padding-bottom: 5.2rem;
+  background: var(--30-black);
+  border-radius: 5rem;
+}
+.obtain-per__item::before {
+  content: counter(counter);
+  display: block;
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 110%;
+  color: var(--accent-blue);
+}
+.obtain-per__item:nth-child(10n+7) {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+.obtain-per__item:nth-child(10n+8) {
+  -ms-grid-column-span: 9;
+  grid-column: 9 span;
+}
+.obtain-per__desc p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.obtain-per__desc ul:not(:last-child),
+.obtain-per__desc ol:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.obtain-per__desc ul li:not(:last-child),
+.obtain-per__desc ol li:not(:last-child) {
   margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
