@@ -1,0 +1,57 @@
+.domestic-comp {
+  background-color: var(--white);
+  border-radius: 5rem;
+  margin-top: 5rem;
+  padding-top: 9rem;
+  margin-bottom: 5rem;
+  &__title {
+    margin-bottom: 3.5rem;
+  }
+
+  &__desc {
+    margin-bottom: 3rem;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    background: var(--30-black);
+    padding: 6.5rem 0;
+    padding-bottom: 5.8rem;
+    border-radius: 5rem;
+  }
+
+  &__left {
+    padding-left: 6rem;
+    grid-column: 4 span;
+  }
+  &__right {
+    padding-right: 6rem;
+    grid-column: 8 span;
+  }
+
+  &__capture {
+    margin-bottom: 3.4rem;
+  }
+
+  &__item {
+    padding: 2.2rem 3rem;
+    border-radius: 2.2rem;
+    background-color: #fff;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+
+    &--value {
+      color: #f00;
+    }
+  }
+}

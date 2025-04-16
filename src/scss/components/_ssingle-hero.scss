@@ -43,4 +43,12 @@
     background-image: url("./../img/hero-indus.webp");
     padding-top: 40.7rem;
   }
+  &--domestic {
+    background-image: url("./../img/hero-domestic.webp");
+    padding-top: 40.7rem;
+
+    .ssingle-hero__content {
+      max-width: 113.7rem;
+    }
+  }
 }

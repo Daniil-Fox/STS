@@ -1658,6 +1658,11 @@ section {
   border-radius: 5rem;
   overflow: hidden;
 }
+.service-func__container--reverse .service-func__img {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
 .service-func__content {
   padding: 9.2rem 10rem;
 }
@@ -1698,6 +1703,20 @@ section {
 .service-func__desc ul li:not(:last-child),
 .service-func__desc ol li:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+.service-func--fiz .service-func__desc p {
+  margin: 0;
+}
+.service-func--fiz .service-func__desc p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.service-func--fiz .service-func__desc ul:not(:last-child),
+.service-func--fiz .service-func__desc ol:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+.service-func--fiz .service-func__desc ul li:not(:last-child),
+.service-func--fiz .service-func__desc ol li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .complete {
@@ -1797,6 +1816,13 @@ section {
 .ssingle-hero--indus {
   background-image: url("./../img/hero-indus.webp");
   padding-top: 40.7rem;
+}
+.ssingle-hero--domestic {
+  background-image: url("./../img/hero-domestic.webp");
+  padding-top: 40.7rem;
+}
+.ssingle-hero--domestic .ssingle-hero__content {
+  max-width: 113.7rem;
 }
 
 .ssingle-dev__content {
@@ -2525,4 +2551,57 @@ section {
 .indus-water__desc ul li:not(:last-child),
 .indus-water__desc ol li:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.domestic-comp {
+  background-color: var(--white);
+  border-radius: 5rem;
+  margin-top: 5rem;
+  padding-top: 9rem;
+  margin-bottom: 5rem;
+}
+.domestic-comp__title {
+  margin-bottom: 3.5rem;
+}
+.domestic-comp__desc {
+  margin-bottom: 3rem;
+}
+.domestic-comp__desc p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.domestic-comp__table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  background: var(--30-black);
+  padding: 6.5rem 0;
+  padding-bottom: 5.8rem;
+  border-radius: 5rem;
+}
+.domestic-comp__left {
+  padding-left: 6rem;
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+}
+.domestic-comp__right {
+  padding-right: 6rem;
+  -ms-grid-column-span: 8;
+  grid-column: 8 span;
+}
+.domestic-comp__capture {
+  margin-bottom: 3.4rem;
+}
+.domestic-comp__item {
+  padding: 2.2rem 3rem;
+  border-radius: 2.2rem;
+  background-color: #fff;
+  line-height: 1;
+}
+.domestic-comp__item:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+.domestic-comp__item--value {
+  color: #f00;
 }/*# sourceMappingURL=main.css.map */
