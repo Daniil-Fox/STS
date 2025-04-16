@@ -21,4 +21,18 @@
     line-height: 1.2;
     margin-bottom: 3.5rem;
   }
+
+  &--nes {
+    .complete__content {
+      padding-top: 9.5rem;
+      padding-right: 11rem;
+    }
+    .complete__desc {
+      p {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,63 @@
+.indus-water {
+  padding-bottom: 5rem;
+  &__container {
+    gap: 0;
+    &:nth-child(even) {
+      .indus-water__img {
+        order: -1;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__img {
+    border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 7.2rem 8rem;
+  }
+
+  &__title {
+    margin-bottom: 2.6rem;
+  }
+
+  &__capture {
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    ul,
+    ol {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
