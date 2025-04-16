@@ -1,0 +1,68 @@
+.types {
+  padding-top: 15.9rem;
+  padding-bottom: 5rem;
+  &__title {
+    margin-bottom: 7rem;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 3rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 56.2rem;
+    background-color: var(--white);
+    border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    @include hover {
+      .types__img {
+        max-height: 44rem;
+      }
+    }
+  }
+  &__link {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+  &__header {
+    flex-grow: 1;
+    max-height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+  }
+  &__btn {
+    width: 14rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    height: 4rem;
+    padding: 1rem 3rem;
+    background: var(--grey-1);
+  }
+  &__capture {
+    font-weight: 600;
+  }
+  &__img {
+    flex-shrink: 0;
+    height: 100%;
+    max-height: 40.2rem;
+    flex-grow: 1;
+    border-radius: 5rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    will-change: max-height;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
