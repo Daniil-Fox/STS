@@ -1,0 +1,40 @@
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__container">
+              <div class="contacts__content">
+                <h1 class="title3 contacts__title">Контакты</h1>
+                <address class="contacts__info desc1">
+                  <p>
+                    Москва, Просп. Рязанский,<br />
+                    д&nbsp;86&nbsp;/ 1, стр.&nbsp;3, эт.&nbsp;3, пом. IV,
+                    ком.&nbsp;10
+                  </p>
+                  <p>
+                    Работаем с&nbsp;9:00 до&nbsp;18:00&nbsp;суббота,
+                    воскресенье&nbsp;&mdash; выходной
+                  </p>
+                  <div class="contacts__row">
+                    <a href="tel:" class="link">+7 (495) 411-27-62</a>
+                    <a href="mailto:info@los-sts.ru" class="link"
+                      >info@los-sts.ru</a
+                    >
+                  </div>
+                </address>
+              </div>
+              <div class="contacts__map" id="map"></div>
+            </div>
+          </div>
+        </section>
+        @include('partials/cta.html')
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

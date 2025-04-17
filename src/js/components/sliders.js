@@ -11,3 +11,12 @@ new Swiper(".examples__slider", {
     nextEl: ".examples-next",
   },
 });
+
+new Swiper(".gallery__slider", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: ".gallery-prev",
+    nextEl: ".gallery-next",
+  },
+});

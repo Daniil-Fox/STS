@@ -57,11 +57,13 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@yandex/ymaps3-default-ui-theme": "^0.0.19",
     "aos": "^2.3.4",
     "graph-modal": "^1.0.7",
     "graph-tabs": "^1.0.2",
     "inputmask": "^5.0.8",
     "just-validate": "^4.3.0",
+    "package": "^1.0.1",
     "rellax": "^1.12.1",
     "simplebar": "^6.2.5",
     "swiped-events": "^1.1.9",

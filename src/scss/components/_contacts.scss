@@ -1,0 +1,45 @@
+.contacts {
+  padding-top: 17rem;
+
+  &__container {
+    display: flex;
+    min-height: 70rem;
+    background-color: var(--white);
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+  &__content {
+    padding: 9.2rem 10rem;
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-bottom: 3.5rem;
+  }
+
+  &__info {
+    font-size: 2rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+
+    a {
+      color: inherit;
+      font-size: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__map {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 116.8rem;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5rem;
+    overflow: hidden;
+  }
+}
