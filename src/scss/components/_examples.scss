@@ -1,22 +1,56 @@
 .examples {
-  padding-top: 9.2rem !important;
-  padding-bottom: 9.2rem !important;
+  padding-top: 9.2rem;
+  padding-bottom: 9.2rem;
+
+  @include mobile {
+    padding: 2.3rem 0;
+    padding-bottom: 4.3rem;
+  }
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     margin-bottom: 5.3rem;
+
+    @include mobile {
+      margin-bottom: 3.2rem;
+    }
   }
   &__right {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @include mobile {
+      display: none;
+    }
   }
   &__slider {
     padding: 0 calc((100% - var(--content-width)) / 2);
     .swiper-slide {
       height: auto;
+    }
+
+    @include mobile {
+      padding: 0;
+      margin: 0 var(--container-offset);
+    }
+  }
+  &__btn {
+    @include mobile {
+      flex-grow: 1;
+      font-size: 2rem;
+      background-color: var(--white);
+      border-radius: 2.2rem;
+    }
+  }
+  &__bottom {
+    display: none;
+    @include mobile {
+      margin-top: 4rem;
+      gap: 3rem;
+      display: flex;
     }
   }
 }

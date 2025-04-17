@@ -2,7 +2,7 @@
   <div class="examples__header container">
     <h2 class="title2 examples__title">Примеры реализованных проектов</h2>
     <div class="examples__right">
-      <a href="#" class="btn btn-reset btn--small btn--white">
+      <a href="#" class="btn btn-reset btn--small btn--white examples__btn">
         Все&nbsp;работы
       </a>
       <div class="examples__control control">
@@ -53,7 +53,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/01.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/01-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/01.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -69,7 +76,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/02.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/02-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/02.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -85,7 +99,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/03.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/03-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/03.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -101,10 +122,57 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/04.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/04-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/04.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="examples__bottom container">
+    <a href="#" class="btn btn--small examples__btn examples__btn--mob">
+      Все&nbsp;услуги
+    </a>
+    <div class="examples__control control">
+      <button
+        class="btn-reset control__btn control__btn--prev examples-prev"
+      >
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <button
+        class="btn-reset control__btn control__btn--next examples-next"
+      >
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
 </section>

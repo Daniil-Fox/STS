@@ -1,23 +1,60 @@
 .our-service {
   background-color: var(--white);
   border-radius: 10rem;
-  padding-top: 9.3rem !important;
+  padding-top: 9.3rem;
   margin-bottom: 10rem;
+  @include mobile {
+    border-radius: 5rem;
+    padding-top: 7rem;
+  }
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     margin-bottom: 5.2rem;
+    @include mobile {
+      margin-bottom: 5.4rem;
+    }
   }
   &__btn {
     padding: 1.1rem 8.5rem;
     border-radius: 1.5rem;
+    @include mobile {
+      display: none;
+      font-size: 2rem;
+    }
+    &--mob {
+      display: none;
+      @include mobile {
+        display: inline-flex;
+        flex-grow: 1;
+      }
+    }
   }
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+    @include mobile {
+      display: flex;
+      gap: 0;
+    }
+  }
+
+  &__bottom {
+    display: none;
+    @include mobile {
+      display: flex;
+      gap: 3rem;
+      margin-top: 6rem;
+    }
+  }
+
+  &__control {
+    .control__btn {
+      background-color: var(--grey-1);
+    }
   }
 }
 
@@ -29,6 +66,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  @include mobile {
+    height: 50rem;
+  }
   &__img {
     border-radius: 5rem;
     overflow: hidden;
@@ -37,6 +77,9 @@
     flex-shrink: 0;
     transition: max-height 0.3s ease-in;
     will-change: max-height;
+    @include mobile {
+      max-height: 38rem;
+    }
     img {
       display: block;
       width: 100%;

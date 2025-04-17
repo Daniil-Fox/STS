@@ -8,6 +8,10 @@
   &--accent {
     color: var(--accent-blue);
   }
+
+  @include mobile {
+    font-size: 5rem;
+  }
 }
 .title2 {
   margin: 0;
@@ -21,6 +25,10 @@
   }
   &--120 {
     line-height: 120%;
+  }
+
+  @include mobile {
+    font-size: 3.6rem;
   }
 }
 .title3 {
@@ -77,6 +85,9 @@
   font-size: 3rem;
   line-height: 110%;
   color: var(--cold-black);
+  @include mobile {
+    font-size: 2.6rem;
+  }
 }
 
 .capture1 {
@@ -139,6 +150,10 @@
 
   &--150 {
     line-height: 150%;
+  }
+
+  @include mobile {
+    font-size: 1.8rem;
   }
 }
 

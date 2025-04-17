@@ -3,10 +3,17 @@
   padding-top: 5.5rem;
   background: var(--white);
   border-radius: 5rem 5rem 0 0;
+  @include mobile {
+    padding-top: 4.5rem;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4.6rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__right {
@@ -14,6 +21,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include mobile {
+      padding-top: 4rem;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+    }
   }
 
   &__logo {
@@ -22,6 +36,12 @@
     height: 7.3rem;
     margin-bottom: 3.1rem;
     margin-top: 0.5rem;
+    flex-shrink: 0;
+    @include mobile {
+      margin: 0;
+      width: 23.3rem;
+      height: 8.6rem;
+    }
     img {
       display: block;
       width: 100%;
@@ -34,8 +54,17 @@
   &__left {
     display: flex;
     gap: 13.4rem;
+    @include mobile {
+      gap: 4rem;
+    }
   }
-
+  &__nav {
+    @include mobile {
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
   &__desc {
     margin: 0;
     margin-bottom: 3rem;
@@ -45,6 +74,10 @@
     text-align: right;
     color: var(--cold-black);
     max-width: 67.7rem;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__address {
@@ -53,9 +86,16 @@
     justify-content: flex-end;
     gap: 2.1rem 2rem;
     flex-wrap: wrap;
+
+    @include mobile {
+      gap: 1rem 2rem;
+    }
     a {
       font-size: 1.8rem;
       font-weight: 400;
+      @include mobile {
+        font-size: 1.6rem;
+      }
     }
     p {
       margin: 0;
@@ -64,6 +104,9 @@
       font-size: 1.8rem;
       line-height: 120%;
       color: var(--cold-black);
+      @include mobile {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -71,6 +114,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: row-reverse;
+    }
     a {
       font-weight: 400;
     }
@@ -90,6 +137,10 @@
     margin-bottom: 3rem;
     font-weight: 500;
     font-size: 2.2rem;
+    @include mobile {
+      font-size: 2.6rem;
+      margin-bottom: 2rem;
+    }
   }
 
   ul {
@@ -108,6 +159,10 @@
         line-height: 120%;
         text-align: center;
         color: var(--cold-black);
+
+        @include mobile {
+          white-space: unset;
+        }
       }
     }
   }

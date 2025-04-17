@@ -4,16 +4,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 22.7rem 0 !important;
+  padding: 22.7rem 0;
   border-radius: 0 0 5rem 5rem;
 
   margin-bottom: 10rem;
+
+  @include mobile {
+    min-height: 109.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3rem 0;
+    background-position-x: 5%;
+    margin-bottom: 5rem;
+  }
   &__content {
     max-width: 69.9rem;
     background-color: var(--white);
     border-radius: 5rem;
     padding: 7rem 8rem;
     padding-bottom: 8rem;
+
+    @include mobile {
+      max-width: 100%;
+      padding: 6rem;
+    }
   }
 
   &__title {

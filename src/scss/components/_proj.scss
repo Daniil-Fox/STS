@@ -1,16 +1,29 @@
 .proj {
   margin-bottom: 10.1rem;
+  @include mobile {
+    margin-bottom: 4.8rem;
+  }
   &__container {
     display: flex;
     background: var(--white);
     border-radius: 5rem;
     overflow: hidden;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
     padding: 9rem 10rem;
-    width: 113.7rem;
+    max-width: 113.7rem;
+    width: 100%;
     flex-shrink: 0;
+
+    @include mobile {
+      max-width: 100%;
+      padding: 5.5rem 4rem;
+    }
   }
 
   &__img {
@@ -18,7 +31,9 @@
     border-radius: 5rem;
     overflow: hidden;
     flex-grow: 1;
-
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       display: block;
       width: 100%;
@@ -28,10 +43,36 @@
 
   &__title {
     margin-bottom: 4.5rem;
+    @include mobile {
+      margin-bottom: 2.6rem;
+      font-size: 3.2rem;
+    }
   }
 
   &__desc {
     margin-bottom: 4.7rem;
+
+    @include mobile {
+      margin-bottom: 2.5rem;
+      p {
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+        &:last-of-type {
+          margin-bottom: 1rem;
+        }
+      }
+      ul,
+      ol {
+        padding-left: 0.9rem;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
   }
 
   &__items {
@@ -49,21 +90,39 @@
     font-size: 1.8rem;
     line-height: 115%;
     color: var(--cold-black);
-
+    p {
+      margin: 0;
+    }
+    @include mobile {
+      gap: 2rem;
+    }
     &:nth-child(3n + 1) {
       width: 18.8rem;
+      @include mobile {
+        width: 100%;
+      }
     }
     &:nth-child(3n + 2) {
       width: 40.1rem;
+      @include mobile {
+        width: 100%;
+      }
     }
     &:nth-child(3n + 3) {
       width: 41rem;
+      @include mobile {
+        width: 100%;
+      }
     }
     span {
       font-weight: 700;
       font-size: 5rem;
       line-height: 1;
       color: var(--accent-blue);
+      flex-shrink: 0;
+      @include mobile {
+        min-width: 4rem;
+      }
     }
   }
 }

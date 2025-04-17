@@ -2,7 +2,14 @@
   <div class="container">
     <div class="header__container">
       <a href="./" class="header__logo">
-        <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        <picture>
+          <source
+            srcset="./img/logo-mob.webp"
+            media="(max-width: 768px)"
+            type="image/webp"
+          />
+          <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        </picture>
       </a>
       <nav class="nav header__nav main-navigation">
         <ul class="menu">
@@ -77,6 +84,14 @@
           </div>
         </div>
       </div>
+      <button
+        class="btn-reset burger header__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>

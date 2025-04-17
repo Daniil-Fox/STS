@@ -78,15 +78,18 @@ button {
 
 section {
   padding: 10rem 0;
-  // &:first-child {
-  //   padding: 0;
-  // }
+
+  @include mobile {
+    padding: 5rem 0;
+  }
 }
 
 .control {
   display: flex;
-  gap: 5px;
-
+  gap: 0.5rem;
+  @include mobile {
+    gap: 1rem;
+  }
   &__btn {
     width: 4rem;
     height: 4rem;
@@ -99,6 +102,11 @@ section {
 
     color: var(--cold-black);
     transition: 0.3s ease-in;
+    @include mobile {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 2.2rem;
+    }
 
     svg {
       stroke: currentColor;
@@ -194,6 +202,10 @@ section {
       grid-column: 4 span;
     }
   }
+}
+
+.burger {
+  @include burger;
 }
 
 @keyframes ymaps3--default-marker-hint-hover {

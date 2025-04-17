@@ -16,6 +16,9 @@ html {
   @media (min-width: 1920px) {
     font-size: 10px;
   }
+  @include mobile {
+    font-size: calc(100vw / 57.6);
+  }
 }
 .page__body {
   margin: 0;

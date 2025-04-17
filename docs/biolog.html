@@ -60,7 +60,14 @@
   <div class="container">
     <div class="header__container">
       <a href="./" class="header__logo">
-        <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        <picture>
+          <source
+            srcset="./img/logo-mob.webp"
+            media="(max-width: 768px)"
+            type="image/webp"
+          />
+          <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        </picture>
       </a>
       <nav class="nav header__nav main-navigation">
         <ul class="menu">
@@ -135,6 +142,14 @@
           </div>
         </div>
       </div>
+      <button
+        class="btn-reset burger header__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
@@ -551,7 +566,14 @@
         </form>
       </div>
       <div class="cta__img">
-        <img src="./img/cta.webp" alt="" />
+        <picture>
+          <source
+            srcset="./img/cta-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/cta.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>
@@ -626,8 +648,9 @@
           <a href="tel:+74954112762" class="link">+7 495 411 27 62</a>
           <a href="mailto:info@los-sts.ru" class="link">info@los-sts.ru</a>
           <p>
-            Москва, Просп. Рязанский, д. 86/1, стр.&nbsp;3, эт.&nbsp;3, пом. IV,
-            ком.&nbsp;10
+            Москва, Просп. Рязанский,
+            д.&nbsp;86/1,&nbsp;стр.&nbsp;3,&nbsp;эт.&nbsp;3,
+            пом.&nbsp;IV,&nbsp;ком.&nbsp;10
           </p>
         </address>
       </div>

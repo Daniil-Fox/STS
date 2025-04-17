@@ -22,21 +22,39 @@
     width: auto;
     height: 5rem;
 
+    @include mobile {
+      height: 4.7rem;
+    }
+
     img {
       display: block;
       height: 100%;
       width: auto;
       object-fit: contain;
+      object-position: left;
+    }
+  }
+  &__burger {
+    display: none;
+    @include mobile {
+      display: block;
     }
   }
   &__nav {
     padding-top: 0.2rem;
+    @include mobile {
+      display: none;
+    }
   }
 
   &__right {
     display: flex;
     align-items: center;
     gap: 3rem;
+
+    @include mobile {
+      display: none;
+    }
   }
   &__btn {
     border-radius: 1.5rem;

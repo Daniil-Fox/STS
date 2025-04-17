@@ -61,7 +61,14 @@
   <div class="container">
     <div class="header__container">
       <a href="./" class="header__logo">
-        <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        <picture>
+          <source
+            srcset="./img/logo-mob.webp"
+            media="(max-width: 768px)"
+            type="image/webp"
+          />
+          <img src="./img/logo.webp" alt="Smart Technology Solutions" />
+        </picture>
       </a>
       <nav class="nav header__nav main-navigation">
         <ul class="menu">
@@ -136,6 +143,14 @@
           </div>
         </div>
       </div>
+      <button
+        class="btn-reset burger header__burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
@@ -203,20 +218,29 @@
         <div class="proj__items">
           <div class="proj__item">
             <span>11</span>
-            Лет&nbsp;на&nbsp;страже чистоты воды
+            <p>Лет&nbsp;на&nbsp;страже<br />чистоты воды</p>
           </div>
           <div class="proj__item">
             <span>3</span>
-            Дня на&nbsp;подготовку предварительного коммерческого предложения
+            <p>
+              Дня на&nbsp;подготовку предварительного коммерческого предложения
+            </p>
           </div>
           <div class="proj__item">
             <span>7</span>
-            Дней на&nbsp;разработку предварительной технологической схемы
+            <p>Дней на&nbsp;разработку предварительной технологической схемы</p>
           </div>
         </div>
       </div>
       <div class="proj__img">
-        <img src="./img/proj.webp" alt="" />
+        <picture>
+          <source
+            srcset="./img/proj-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/proj.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>
@@ -228,50 +252,93 @@
       <h2 class="title2 our-service__title">Наши услуги</h2>
       <a href="#" class="btn btn--small our-service__btn"> Все&nbsp;услуги </a>
     </div>
-    <div class="our-service__items">
-      <article class="our-service__item service-item">
-        <a href="#" class="service-item__link"></a>
-        <div class="service-item__img">
-          <img src="./img/service/01.webp" alt="" />
-        </div>
-        <div class="service-item__content">
-          <h4 class="service-item__title capture1">Проектирование&nbsp;ОС</h4>
-        </div>
-      </article>
-      <article class="our-service__item service-item">
-        <a href="#" class="service-item__link"></a>
-        <div class="service-item__img">
-          <img src="./img/service/02.webp" alt="" />
-        </div>
-        <div class="service-item__content">
-          <h4 class="service-item__title capture1">
-            Строительство и&nbsp;ввод в&nbsp;эксплуатацию&nbsp;ОС
-          </h4>
-        </div>
-      </article>
-      <article class="our-service__item service-item">
-        <a href="#" class="service-item__link"></a>
-        <div class="service-item__img">
-          <img src="./img/service/03.webp" alt="" />
-        </div>
-        <div class="service-item__content">
-          <h4 class="service-item__title capture1">
-            Получение решения о&nbsp;предоставлении водного объекта
-            в&nbsp;пользование
-          </h4>
-        </div>
-      </article>
-      <article class="our-service__item service-item">
-        <a href="#" class="service-item__link"></a>
-        <div class="service-item__img">
-          <img src="./img/service/04.webp" alt="" />
-        </div>
-        <div class="service-item__content">
-          <h4 class="service-item__title capture1">
-            Разработка экологической документации
-          </h4>
-        </div>
-      </article>
+    <div class="our-service__slider swiper">
+      <div class="our-service__items swiper-wrapper">
+        <article class="our-service__item swiper-slide service-item">
+          <a href="#" class="service-item__link"></a>
+          <div class="service-item__img">
+            <img src="./img/service/01.webp" alt="" />
+          </div>
+          <div class="service-item__content">
+            <h4 class="service-item__title capture1">Проектирование&nbsp;ОС</h4>
+          </div>
+        </article>
+        <article class="our-service__item swiper-slide service-item">
+          <a href="#" class="service-item__link"></a>
+          <div class="service-item__img">
+            <img src="./img/service/02.webp" alt="" />
+          </div>
+          <div class="service-item__content">
+            <h4 class="service-item__title capture1">
+              Строительство и&nbsp;ввод в&nbsp;эксплуатацию&nbsp;ОС
+            </h4>
+          </div>
+        </article>
+        <article class="our-service__item swiper-slide service-item">
+          <a href="#" class="service-item__link"></a>
+          <div class="service-item__img">
+            <img src="./img/service/03.webp" alt="" />
+          </div>
+          <div class="service-item__content">
+            <h4 class="service-item__title capture1">
+              Получение решения о&nbsp;предоставлении водного объекта
+              в&nbsp;пользование
+            </h4>
+          </div>
+        </article>
+        <article class="our-service__item swiper-slide service-item">
+          <a href="#" class="service-item__link"></a>
+          <div class="service-item__img">
+            <img src="./img/service/04.webp" alt="" />
+          </div>
+          <div class="service-item__content">
+            <h4 class="service-item__title capture1">
+              Разработка экологической документации
+            </h4>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="our-service__bottom">
+      <a href="#" class="btn btn--small our-service__btn our-service__btn--mob">
+        Все&nbsp;услуги
+      </a>
+      <div class="our-service__control control">
+        <button
+          class="btn-reset control__btn control__btn--prev our-service-prev"
+        >
+          <svg
+            width="13"
+            height="20"
+            viewBox="0 0 13 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+        <button
+          class="btn-reset control__btn control__btn--next our-service-next"
+        >
+          <svg
+            width="13"
+            height="20"
+            viewBox="0 0 13 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -279,7 +346,7 @@
   <div class="examples__header container">
     <h2 class="title2 examples__title">Примеры реализованных проектов</h2>
     <div class="examples__right">
-      <a href="#" class="btn btn-reset btn--small btn--white">
+      <a href="#" class="btn btn-reset btn--small btn--white examples__btn">
         Все&nbsp;работы
       </a>
       <div class="examples__control control">
@@ -330,7 +397,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/01.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/01-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/01.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -346,7 +420,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/02.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/02-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/02.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -362,7 +443,14 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/03.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/03-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/03.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
@@ -378,12 +466,59 @@
             </p>
           </div>
           <div class="ex-item__img">
-            <img src="./img/examples/04.webp" alt="" />
+            <picture>
+              <source
+                srcset="./img/examples/04-mob.webp"
+                type="image/webp"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/examples/04.webp" alt="" />
+            </picture>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="examples__bottom container">
+    <a href="#" class="btn btn--small examples__btn examples__btn--mob">
+      Все&nbsp;услуги
+    </a>
+    <div class="examples__control control">
+      <button
+        class="btn-reset control__btn control__btn--prev examples-prev"
+      >
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <button
+        class="btn-reset control__btn control__btn--next examples-next"
+      >
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
 </section>
 
         <section class="news-section">
@@ -404,14 +539,14 @@
         <div class="news-item__content">
           <div class="news-item__text">
             <h4 class="capture1 news-item__title">
-              г.&nbsp;Доброград,<br />Ковровского р-на
+              г.&nbsp;Доброград, Ковровского р-на
             </h4>
             <p class="desc2 desc2--150 news-item__desc">
-              Начаты работы по&nbsp;подготовке котлована для строительства
+              Начаты работы по&nbsp;подготовке котлована для&nbsp;строительства
               жилого многоквартирного Дома 1&nbsp;г. Доброград, Ковровский р-н.
             </p>
           </div>
-          <time datetime="11.22.2022">22&nbsp;ноября 2022</time>
+          <time class="desc2" datetime="11.22.2022">22&nbsp;ноября 2022</time>
         </div>
       </article>
       <article class="news-section__item news-item">
@@ -429,7 +564,9 @@
               для&nbsp;освещения уличной территории школы.
             </p>
           </div>
-          <time datetime="11.01.2022">11&nbsp;января 2022</time>
+          <time class="desc2 desc2--150" datetime="11.01.2022"
+            >11&nbsp;января 2022</time
+          >
         </div>
       </article>
       <article class="news-section__item news-item">
@@ -448,7 +585,9 @@
               сырзавода.
             </p>
           </div>
-          <time datetime="11.22.2022">07&nbsp;декабря 2021</time>
+          <time class="desc2 desc2--150" datetime="11.22.2022"
+            >07&nbsp;декабря 2021</time
+          >
         </div>
       </article>
       <article class="news-section__item news-item">
@@ -465,10 +604,19 @@
               Работы по&nbsp;проектированию ЛОС&nbsp;завершены.
             </p>
           </div>
-          <time datetime="11.22.2022">29&nbsp;октября 2021</time>
+          <time class="desc2 desc2--150" datetime="11.22.2022"
+            >29&nbsp;октября 2021</time
+          >
         </div>
       </article>
     </div>
+
+    <a
+      href="#"
+      class="btn btn--white btn-reset btn--small news-section__btn news-section__btn--mob"
+    >
+      Архив новостей
+    </a>
   </div>
 </section>
  <section class="cta">
@@ -509,7 +657,14 @@
         </form>
       </div>
       <div class="cta__img">
-        <img src="./img/cta.webp" alt="" />
+        <picture>
+          <source
+            srcset="./img/cta-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/cta.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>
@@ -584,8 +739,9 @@
           <a href="tel:+74954112762" class="link">+7 495 411 27 62</a>
           <a href="mailto:info@los-sts.ru" class="link">info@los-sts.ru</a>
           <p>
-            Москва, Просп. Рязанский, д. 86/1, стр.&nbsp;3, эт.&nbsp;3, пом. IV,
-            ком.&nbsp;10
+            Москва, Просп. Рязанский,
+            д.&nbsp;86/1,&nbsp;стр.&nbsp;3,&nbsp;эт.&nbsp;3,
+            пом.&nbsp;IV,&nbsp;ком.&nbsp;10
           </p>
         </address>
       </div>
