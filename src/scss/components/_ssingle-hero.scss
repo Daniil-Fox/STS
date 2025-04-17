@@ -51,4 +51,19 @@
       max-width: 113.7rem;
     }
   }
+
+  &--biolog {
+    background-image: url("./../img/hero-biolog.webp");
+
+    .ssingle-hero__content {
+      max-width: 142.8rem;
+    }
+  }
+  &--phisco {
+    background-image: url("./../img/hero-phisco.webp");
+
+    .ssingle-hero__content {
+      max-width: 142.8rem;
+    }
+  }
 }

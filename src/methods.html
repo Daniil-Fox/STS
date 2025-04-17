@@ -1,0 +1,45 @@
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="methods">
+          <div class="container">
+            <h1 class="title1 methods__title">Методы очистки сточных вод</h1>
+            <div class="methods__items">
+              <div class="methods__item">
+                <div class="methods__header">
+                  <a href="#" class="methods__link"></a>
+                  <p class="methods__capture title4">
+                    Биологическая очистка сточных&nbsp;вод
+                  </p>
+                  <a href="#" class="btn btn-reset methods__btn">Подробнее</a>
+                </div>
+                <div class="methods__img">
+                  <img src="./img/methods/01.webp" alt="" />
+                </div>
+              </div>
+              <div class="methods__item">
+                <div class="methods__header">
+                  <a href="#" class="methods__link"></a>
+                  <p class="methods__capture title4">
+                    Физико-химический метод очистки сточных вод
+                  </p>
+                  <a href="#" class="btn btn-reset methods__btn">Подробнее</a>
+                </div>
+                <div class="methods__img">
+                  <img src="./img/methods/02.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @include('partials/cta.html')
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

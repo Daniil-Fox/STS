@@ -1,0 +1,60 @@
+.methods {
+  padding-top: 15.9rem;
+  padding-bottom: 5rem;
+  &__title {
+    margin-bottom: 7rem;
+  }
+  &__item {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5rem;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @include hover {
+      .methods__img {
+        max-height: 41rem;
+      }
+    }
+  }
+  &__header {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+  }
+  &__capture {
+    letter-spacing: -0.012em;
+  }
+  &__btn {
+    font-size: 1.6rem;
+    padding-left: 5.1rem;
+    padding-right: 5.1rem;
+  }
+  &__link {
+    position: absolute;
+    inset: 0;
+  }
+  &__img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 100%;
+    max-height: 38rem;
+
+    transition: max-height 0.4s ease-in;
+    will-change: max-height;
+    border-radius: 5rem;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

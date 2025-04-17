@@ -46,6 +46,31 @@
     color: var(--accent-blue);
   }
 }
+
+.title5 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 110%;
+  color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
+}
+.title6 {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 110%;
+  color: var(--cold-black);
+
+  &--accent {
+    color: var(--accent-blue);
+  }
+}
 .subtitle1 {
   margin: 0;
   font-weight: 500;

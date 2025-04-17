@@ -1,0 +1,32 @@
+.adv {
+  padding-top: 9.5rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__item {
+    padding: 3.5rem 4rem 3.1rem;
+    background-color: var(--white);
+    border-radius: 2.2rem;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__col:first-child {
+    .adv__item {
+      padding-bottom: 5.8rem;
+
+      &:nth-of-type(3) {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}

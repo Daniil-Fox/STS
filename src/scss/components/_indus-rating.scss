@@ -42,3 +42,38 @@
     }
   }
 }
+
+.indus-rating--biolog {
+  margin-top: 5.4rem;
+
+  .indus-rating {
+    &__title {
+      margin-bottom: 3rem;
+    }
+    &__subtitle {
+      margin-bottom: 2.5rem;
+    }
+    &__items {
+      gap: 4rem;
+    }
+    &__descr {
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  .ir-item {
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__desc {
+      ul,
+      ol {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
