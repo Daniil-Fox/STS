@@ -28,13 +28,16 @@
     }
   }
   &__img {
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
+    flex-grow: 1;
     flex-shrink: 0;
     border-radius: 5rem;
     overflow: hidden;
     min-height: 30rem;
     position: relative;
-
+    transition: max-width 0.3s ease-in;
+    will-change: max-width;
     img {
       position: absolute;
       left: 0;
@@ -58,6 +61,9 @@
   @include hover {
     .news-item__title {
       color: var(--accent-blue);
+    }
+    .news-item__img {
+      max-width: 42rem;
     }
   }
   &:focus {
