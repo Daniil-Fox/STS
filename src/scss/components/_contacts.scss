@@ -1,20 +1,33 @@
 .contacts {
   padding-top: 17rem;
-
+  @include mobile {
+    padding-top: 14.5rem;
+  }
   &__container {
     display: flex;
     min-height: 70rem;
     background-color: var(--white);
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      flex-direction: column;
+      min-height: unset;
+    }
   }
   &__content {
     padding: 9.2rem 10rem;
     flex-grow: 1;
+    @include mobile {
+      padding: 6rem 4rem;
+      flex: unset;
+    }
   }
 
   &__title {
     margin-bottom: 3.5rem;
+    @include mobile {
+      font-size: 3.2rem;
+    }
   }
 
   &__info {
@@ -41,5 +54,9 @@
     background-color: #ccc;
     border-radius: 5rem;
     overflow: hidden;
+
+    @include mobile {
+      height: 57.6rem;
+    }
   }
 }

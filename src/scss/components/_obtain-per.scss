@@ -7,8 +7,18 @@
   border-radius: 5rem;
   overflow: hidden;
 
+  @include mobile {
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+    margin-bottom: 5.4rem;
+  }
+
   &__title {
     margin-bottom: 4.2rem;
+    @include mobile {
+      line-height: 0.9;
+      margin-bottom: 4.6rem;
+    }
   }
 
   &__items {
@@ -17,9 +27,15 @@
     gap: 3rem;
 
     counter-reset: counter;
-
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
     &:not(:last-child) {
       margin-bottom: 4.4rem;
+      @include mobile {
+        margin-bottom: 5rem;
+      }
     }
   }
 
@@ -31,7 +47,10 @@
     padding-bottom: 5.2rem;
     background: var(--30-black);
     border-radius: 5rem;
-
+    @include mobile {
+      padding: 3.6rem 4rem;
+      padding-bottom: 3rem;
+    }
     &::before {
       content: counter(counter);
       display: block;
@@ -40,6 +59,10 @@
       font-size: 3rem;
       line-height: 110%;
       color: var(--accent-blue);
+      @include mobile {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+      }
     }
     &:nth-child(10n + 7) {
       grid-column: 3 span;

@@ -1,9 +1,15 @@
 .prepare {
   padding-top: 5rem;
+  @include mobile {
+    display: none;
+  }
   &__img {
     position: relative;
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;
@@ -14,6 +20,9 @@
   }
   &__right {
     padding: 9rem 7rem;
+    @include mobile {
+      padding: 4rem 4rem;
+    }
   }
 
   &__title {

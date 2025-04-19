@@ -1,8 +1,15 @@
 .methods {
   padding-top: 15.9rem;
   padding-bottom: 5rem;
+  @include mobile {
+    padding-top: 14.5rem;
+  }
   &__title {
     margin-bottom: 7rem;
+    @include mobile {
+      line-height: 0.9;
+      margin-bottom: 3.5rem;
+    }
   }
   &__item {
     height: 50rem;
@@ -12,9 +19,15 @@
     overflow: hidden;
     background-color: #fff;
     position: relative;
-
+    @include mobile {
+      height: auto;
+      display: block;
+    }
     &:not(:last-child) {
       margin-bottom: 5rem;
+      @include mobile {
+        margin-bottom: 3rem;
+      }
     }
 
     @include hover {
@@ -29,14 +42,23 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 6rem;
+    @include mobile {
+      padding: 3.4rem 4rem;
+    }
   }
   &__capture {
     letter-spacing: -0.012em;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
   &__btn {
     font-size: 1.6rem;
     padding-left: 5.1rem;
     padding-right: 5.1rem;
+    @include mobile {
+      display: none;
+    }
   }
   &__link {
     position: absolute;
@@ -52,6 +74,10 @@
     will-change: max-height;
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      max-height: unset;
+      height: 46.6rem;
+    }
     img {
       width: 100%;
       height: 100%;

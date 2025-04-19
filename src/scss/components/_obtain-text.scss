@@ -1,15 +1,25 @@
 .obtain-text {
   padding-top: 5rem;
+  @include mobile {
+    padding-top: 5.4rem;
+  }
   &__left {
     padding: 9.6rem 10rem;
     padding-bottom: 9.2rem;
     padding-right: 7rem;
+    @include mobile {
+      padding: 2.4rem 4rem;
+      padding-bottom: 5rem;
+    }
   }
 
   &__img {
     border-radius: 5rem;
     overflow: hidden;
     position: relative;
+    @include mobile {
+      height: 42.7rem;
+    }
     img {
       position: absolute;
       left: 0;

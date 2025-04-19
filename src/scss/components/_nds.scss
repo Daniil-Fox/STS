@@ -7,11 +7,40 @@
   background-color: var(--white);
   border-radius: 5rem;
   padding-top: 9rem;
+  @include mobile {
+    padding-top: 5.7rem;
+    padding-bottom: 5.9rem;
+  }
   &--blocks {
     padding-bottom: 6rem;
+    @include mobile {
+      margin: 0 var(--container-offset);
+      .container {
+        padding: 0 4rem;
+      }
+      .nds__title {
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+
+        &--lm {
+          letter-spacing: -0.04em;
+          margin-bottom: 2.7rem;
+        }
+      }
+      .nds__heading {
+        @include mobile {
+          &:not(:last-child) {
+            margin-bottom: 7.2rem;
+          }
+        }
+      }
+    }
   }
   &:not(:last-of-type) {
     margin-bottom: 15rem;
+    @include mobile {
+      margin-bottom: 10rem;
+    }
   }
   &__title {
     margin-bottom: 3.5rem;
@@ -41,25 +70,39 @@
   }
 
   &__heading {
-    margin-bottom: 3.3rem;
+    &:not(:last-child) {
+      margin-bottom: 3.3rem;
+    }
   }
 }
 
 .nds-steps {
   &__title {
     margin-bottom: 3.3rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 2.8rem;
+    }
   }
   &__item {
     background: var(--30-black);
     padding: 5.3rem 6rem;
     overflow: hidden;
     border-radius: 5rem;
+
+    @include tablet {
+      padding: 3.5rem 4rem;
+      padding-bottom: 3.3rem;
+    }
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
   }
   &__capture {
     margin-bottom: 1.8rem;
+    @include mobile {
+      margin-bottom: 1.9rem;
+    }
   }
   &__desc {
     p {

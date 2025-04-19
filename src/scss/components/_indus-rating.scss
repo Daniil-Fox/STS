@@ -4,20 +4,35 @@
   padding-top: 9.5rem;
   background-color: var(--white);
   border-radius: 5rem;
-
+  @include mobile {
+    padding-top: 7.6rem;
+    padding-bottom: 8.5rem;
+    order: 0;
+  }
   &__title {
     margin-bottom: 5rem;
     line-height: 0.9;
+    @include mobile {
+      margin-bottom: 4.1rem;
+    }
   }
 
   &__subtitle {
     margin-bottom: 5.1rem;
+    @include mobile {
+      margin-bottom: 4.3rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -26,12 +41,19 @@
     overflow: hidden;
     border-radius: 5rem;
     background: var(--30-black);
+    @include mobile {
+      padding: 3.5rem 4rem;
+      padding-bottom: 3.2rem;
+    }
   }
 }
 
 .ir-item {
   &__title {
     margin-bottom: 2.8rem;
+    @include mobile {
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__desc {
@@ -45,7 +67,9 @@
 
 .indus-rating--biolog {
   margin-top: 5.4rem;
-
+  @include mobile {
+    margin-top: 4.6rem;
+  }
   .indus-rating {
     &__title {
       margin-bottom: 3rem;

@@ -3,10 +3,19 @@
   margin-bottom: 5rem;
   &__left {
     padding: 9.2rem 10rem;
+
+    @include mobile {
+      padding: 2.2rem 4rem;
+      padding-bottom: 5rem;
+    }
   }
 
   &__title {
     margin-bottom: 3.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 2.9rem;
+    }
   }
   &__desc {
     ol,
@@ -22,7 +31,9 @@
     position: relative;
     border-radius: 5rem;
     overflow: hidden;
-
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;

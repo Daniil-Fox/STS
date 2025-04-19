@@ -64,23 +64,28 @@
     overflow: hidden;
     min-height: 30rem;
     position: relative;
-    transition: max-width 0.3s ease-in;
-    will-change: max-width;
+    transform-origin: left;
+    transition: transform 0.3s;
     @include mobile {
       max-width: 100%;
       min-height: unset;
       height: 22rem;
       max-height: 100%;
       flex: unset;
-      transition: unset;
-      will-change: unset;
+      // transition: unset;
+      // will-change: unset;
     }
     img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100%;
+      min-width: 44rem;
       height: 100%;
+
+      @include mobile {
+        min-width: unset;
+        width: 100%;
+      }
     }
   }
   &__content {
@@ -108,7 +113,8 @@
       color: var(--accent-blue);
     }
     .news-item__img {
-      max-width: 42rem;
+      // max-width: 42rem;
+      transform: scaleX(1.05);
     }
   }
   &:focus {

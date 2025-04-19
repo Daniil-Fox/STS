@@ -1,16 +1,30 @@
 .ssingle-per {
   padding-top: 5.5rem;
+  @include mobile {
+    padding-top: 4.7rem;
+  }
   &__content {
     padding: 9.2rem 10rem;
     padding-right: 7.5rem;
+    @include mobile {
+      padding: 2.3rem 4rem;
+      padding-bottom: 5.2rem;
+    }
   }
   &__title {
     margin-bottom: 3.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 2.7rem;
+    }
   }
   &__img {
     position: relative;
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;

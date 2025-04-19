@@ -12494,6 +12494,14 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".gallery__slider", {
   navigation: {
     prevEl: ".gallery-prev",
     nextEl: ".gallery-next"
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    769: {
+      slidesPerView: 4
+    }
   }
 });
 window.addEventListener("DOMContentLoaded", () => {

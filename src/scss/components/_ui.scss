@@ -135,7 +135,10 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 3rem;
-
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   &--white {
     background-color: #fff;
     border-radius: 5rem;

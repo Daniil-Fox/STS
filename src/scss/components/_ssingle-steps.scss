@@ -3,8 +3,17 @@
   background-color: var(--white);
   border-radius: 5rem;
   margin-bottom: 5rem;
+
+  @include mobile {
+    padding-top: 7.3rem;
+    padding-bottom: 8rem;
+  }
   &__title {
     margin-bottom: 4rem;
+    @include mobile {
+      font-size: 4rem;
+      margin-bottom: 4.2rem;
+    }
   }
 }
 
@@ -13,21 +22,39 @@
   overflow: hidden;
   display: flex;
   background: var(--30-black);
+  @include mobile {
+    flex-direction: column;
+  }
 
   &:nth-child(even) {
     flex-direction: row-reverse;
+    @include mobile {
+      flex-direction: column;
+
+      .ss-step__img {
+        height: 30rem;
+      }
+    }
   }
   &:not(:last-child) {
     margin-bottom: 5rem;
   }
   &__title {
     margin-bottom: 1.9rem;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
   &__content {
     padding: 5.4rem 5.9rem;
     padding-bottom: 5.1rem;
     max-width: 117.1rem;
     flex-shrink: 0;
+
+    @include mobile {
+      padding: 3.4rem 4rem;
+      padding-bottom: 5.1rem;
+    }
   }
 
   &__img {
@@ -36,6 +63,10 @@
 
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 35.2rem;
+      order: -1;
+    }
     img {
       position: absolute;
       left: 0;
@@ -57,15 +88,34 @@
 .ss-step--half {
   .ss-step__content {
     max-width: 87.7rem;
+    @include mobile {
+      max-width: 100%;
+    }
   }
 }
 .ss-step--fifth {
   .ss-step__content {
     max-width: 99.1rem;
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+  .ss-step__img {
+    @include mobile {
+      height: 37rem;
+    }
   }
 }
 .ss-step--last {
   .ss-step__content {
     max-width: 102.1rem;
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+  .ss-step__img {
+    @include mobile {
+      height: 34rem !important;
+    }
   }
 }

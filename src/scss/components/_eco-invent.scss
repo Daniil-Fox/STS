@@ -1,9 +1,15 @@
 .eco-invent {
   padding-top: 5.3rem;
+  @include mobile {
+    padding-top: 3.2rem;
+  }
   &__container {
     display: flex;
     border-radius: 5rem;
     background-color: var(--white);
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
@@ -11,10 +17,18 @@
     max-width: 128.3rem;
     width: 100%;
     padding: 9.2rem 10rem;
+    @include mobile {
+      padding: 5.2rem 4rem;
+      max-width: 100%;
+    }
   }
 
   &__title {
     margin-bottom: 3.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 2.9rem;
+    }
   }
 
   &__img {
@@ -22,6 +36,9 @@
     border-radius: 5rem;
     overflow: hidden;
     flex-grow: 1;
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;

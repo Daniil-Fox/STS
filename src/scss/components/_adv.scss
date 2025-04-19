@@ -1,13 +1,25 @@
 .adv {
   padding-top: 9.5rem;
+
+  @include mobile {
+    padding-top: 4rem;
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 5.6rem;
+    }
   }
 
   &__title {
     margin-bottom: 3.2rem;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
 
   &__item {
@@ -23,9 +35,15 @@
   &__col:first-child {
     .adv__item {
       padding-bottom: 5.8rem;
+      @include mobile {
+        padding-bottom: 3.1rem;
+      }
 
       &:nth-of-type(3) {
         padding-bottom: 3rem;
+        @include mobile {
+          padding-bottom: 3.1rem;
+        }
       }
     }
   }

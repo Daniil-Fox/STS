@@ -3,6 +3,10 @@
     padding: 6.8rem 8rem;
     background-color: var(--white);
     border-radius: 5rem;
+    @include mobile {
+      padding: 4.8rem 4rem;
+      padding-bottom: 6rem;
+    }
     &:not(:last-child) {
       margin-bottom: 3.5rem;
     }
@@ -10,9 +14,14 @@
 
   &__title {
     line-height: 1.2;
-
+    @include mobile {
+      font-size: 3.2rem;
+    }
     &:not(:last-child) {
       margin-bottom: 2.6rem;
+      @include mobile {
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
@@ -35,15 +44,13 @@
 
   &--pad {
     padding-top: 5rem;
+    @include mobile {
+      padding-top: 5.5rem;
+    }
 
-    .ssingle-dev__desc {
-      ul,
-      ol {
-        li {
-          &:not(:last-child) {
-            margin-bottom: 1rem;
-          }
-        }
+    .ssingle-dev__content {
+      @include mobile {
+        padding-right: 3.8rem;
       }
     }
   }
@@ -83,14 +90,23 @@
     .ssingle-dev__content {
       padding-top: 7.1rem;
       padding-bottom: 7.2rem;
-
+      @include mobile {
+        padding-top: 4.7rem;
+        padding-bottom: 5.1rem;
+      }
       &:not(:last-child) {
         margin-bottom: 3rem;
+        @include mobile {
+          margin-bottom: 10rem;
+        }
       }
     }
     .ssingle-dev__title {
       line-height: 1.3;
 
+      @include mobile {
+        line-height: 1.2;
+      }
       &--12 {
         line-height: 1.15;
       }
@@ -101,6 +117,73 @@
         li {
           &:not(:last-child) {
             margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &--ext {
+    .ssingle-dev__content {
+      padding-top: 5.6rem;
+    }
+  }
+  &--biolog {
+    @include mobile {
+      order: 10;
+    }
+    .ssingle-dev__title {
+      @include mobile {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  &--20 {
+    .ssingle-dev__desc {
+      @include mobile {
+        font-size: 2rem;
+      }
+      ul,
+      ol {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+            @include mobile {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+      p {
+        @include mobile {
+          &:not(:last-child) {
+            margin-bottom: 0.4rem;
+          }
+        }
+      }
+    }
+    .ssingle-dev__content:last-child {
+      .ssingle-dev__title {
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .ssingle-dev__desc {
+        @include mobile {
+          font-size: 1.8rem;
+
+          p {
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+          }
+          ul,
+          ol {
+            li {
+              &:not(:last-child) {
+                margin-bottom: 2rem;
+              }
+            }
           }
         }
       }

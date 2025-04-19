@@ -41,6 +41,10 @@
   &--accent {
     color: var(--accent-blue);
   }
+
+  @include mobile {
+    font-size: 3.6rem;
+  }
 }
 .title4 {
   margin: 0;
@@ -52,6 +56,10 @@
 
   &--accent {
     color: var(--accent-blue);
+  }
+
+  @include mobile {
+    font-size: 2.4rem;
   }
 }
 
@@ -119,6 +127,9 @@
     margin: 0;
     &:not(:last-child) {
       margin-bottom: 1.5rem;
+      @include mobile {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -161,10 +172,15 @@
   padding: 7.5rem 8rem;
   background-color: var(--white);
   border-radius: 5rem;
-
+  @include mobile {
+    padding: 5.5rem 4rem;
+  }
   p {
     &:not(:last-child) {
       margin-bottom: 3.5rem;
+      @include mobile {
+        margin-bottom: 2.8rem;
+      }
     }
   }
   ul,

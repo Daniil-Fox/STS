@@ -41,11 +41,18 @@
 
   &__desc {
     line-height: 1.75;
+
     &:not(:last-of-type) {
       margin-bottom: 0.9rem;
+      @include mobile {
+        margin-bottom: 1.2rem;
+      }
     }
     &:last-of-type {
       margin-bottom: 3.9rem;
+      @include mobile {
+        margin-bottom: 3rem;
+      }
     }
   }
 
@@ -55,21 +62,45 @@
     border-radius: 2.2rem;
   }
 }
-
 .hero--about {
   background-image: url("./../img/hero-about.webp");
-  padding-top: 25.8rem !important;
+  padding-top: 25.8rem;
+  @include mobile {
+    padding: 3rem 0;
+  }
   .hero__title {
     font-size: 5.6rem;
     margin-bottom: 2.9rem;
+
+    @include mobile {
+      font-size: 5rem;
+      margin-bottom: 2.2rem;
+      line-height: 1;
+    }
   }
   .hero__content {
     max-width: 99.1rem;
     padding-top: 6.9rem;
+
+    @include mobile {
+      max-width: 100%;
+      padding: 6rem;
+      padding-top: 5rem;
+    }
+  }
+  .hero__desc {
+    @include mobile {
+      line-height: 1.6;
+    }
   }
 
   .hero__btn {
     width: auto;
     min-width: 47.1rem;
+
+    @include mobile {
+      min-width: unset;
+      width: 100%;
+    }
   }
 }

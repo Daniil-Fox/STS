@@ -7,16 +7,51 @@
     justify-content: space-between;
 
     margin-bottom: 5.3rem;
+    @include mobile {
+      margin-bottom: 3.4rem;
+    }
   }
   &__slider {
     padding: 0 calc((100% - var(--content-width)) / 2);
+    @include mobile {
+      padding: 0;
+      margin: 0 var(--container-offset);
+    }
   }
+  &__control {
+    @include mobile {
+      display: none;
+      .control__btn {
+        background-color: #fff;
+      }
+    }
 
+    &--mob {
+      display: none;
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+  &__btn {
+    flex: 1;
+  }
+  &__bottom {
+    display: none;
+    @include mobile {
+      margin-top: 4rem;
+      display: flex;
+      gap: 3rem;
+    }
+  }
   &__item {
     cursor: zoom-in;
     height: 32.4rem;
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 48rem;
+    }
     img {
       display: block;
       width: 100%;

@@ -1,6 +1,8 @@
 <section class="const-doing">
   <div class="container">
-    <div class="const-doing__container wblock wblock--white wblock--2">
+    <div
+      class="const-doing__container wblock wblock--white wblock--2 corner-smooth-50"
+    >
       <div class="wblock__left const-doing__left">
         <h2 class="title3 const-doing__title">Что&nbsp;мы&nbsp;делаем:</h2>
         <div class="desc1 const-doing__desc">
@@ -15,8 +17,15 @@
           </ol>
         </div>
       </div>
-      <div class="wblock__right const-doing__img">
-        <img src="./img/const.webp" alt="" />
+      <div class="wblock__right const-doing__img corner-smooth-50">
+        <picture>
+          <source
+            srcset="./img/const-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/const.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>

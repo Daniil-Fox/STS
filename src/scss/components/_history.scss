@@ -5,15 +5,35 @@
     padding-top: 9rem;
     padding-right: 7rem;
     padding-bottom: 9.7rem;
+
+    @include mobile {
+      padding: 2.2rem 4rem;
+      padding-bottom: 5.7rem;
+    }
   }
 
   &__title {
     margin-bottom: 3.4rem;
+    @include mobile {
+      margin-bottom: 2.8rem;
+    }
+  }
+  &__desc {
+    p {
+      &:not(:last-child) {
+        @include mobile {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
   &__img {
     position: relative;
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;

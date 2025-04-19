@@ -1,6 +1,6 @@
 .about-objects {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   &__left,
   &__right {
     background-color: var(--white);
@@ -14,17 +14,34 @@
     .about-objects__img {
       height: 40.3rem;
     }
+    @include mobile {
+      flex-direction: column-reverse;
+      .about-objects__img {
+        height: 51.5rem;
+      }
+    }
   }
   &__right {
     flex-direction: column-reverse;
 
     .about-objects__img {
       height: 25.5rem;
+      @include mobile {
+        height: 22rem;
+      }
     }
     .about-objects__content {
       padding: 7.9rem;
       padding-top: 7.1rem;
       padding-bottom: 7.2rem;
+      @include mobile {
+        padding: 5.2rem 4rem;
+      }
+    }
+    .about-objects__title {
+      @include mobile {
+        font-size: 3.2rem;
+      }
     }
   }
   &__title {
@@ -34,6 +51,9 @@
     padding: 8rem 6rem;
     padding-top: 7.2rem;
     padding-bottom: 7.2rem;
+    @include mobile {
+      padding: 5.4rem 4rem;
+    }
   }
 
   &__img {
@@ -47,8 +67,14 @@
   }
 
   &__container {
+    @include mobile {
+      flex-direction: column;
+    }
     &:not(:last-child) {
       margin-bottom: 15rem;
+      @include mobile {
+        margin-bottom: 10rem;
+      }
     }
     &--full {
       .about-objects__left,
@@ -59,6 +85,9 @@
       .about-objects__img {
         position: relative;
         height: 100%;
+        @include mobile {
+          height: 31.5rem;
+        }
         img {
           position: absolute;
           left: 0;
@@ -68,6 +97,10 @@
       .about-objects__right {
         padding: 7.3rem 5rem;
         padding-bottom: 7.7rem;
+        @include mobile {
+          padding: 2.2rem 4rem;
+          padding-bottom: 5.9rem;
+        }
       }
     }
   }

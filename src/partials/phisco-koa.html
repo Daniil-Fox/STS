@@ -1,6 +1,8 @@
 <section class="service-func service-func--koa">
   <div class="container">
-    <div class="service-func__container service-func__container--reverse">
+    <div
+      class="service-func__container service-func__container--reverse corner-smooth-50"
+    >
       <div class="service-func__content">
         <h2 class="title3 service-func__title">Коагуляция</h2>
         <div class="desc1 service-func__desc">
@@ -32,7 +34,14 @@
         </div>
       </div>
       <div class="service-func__img">
-        <img src="./img/koa.webp" alt="" />
+        <picture>
+          <source
+            srcset="./img/koa-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/koa.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>

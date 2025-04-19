@@ -159,7 +159,7 @@
         <section class="work-hero">
   <div class="work-hero__block">
     <div class="container">
-      <div class="wblock wblock--white work-hero__container">
+      <div class="wblock wblock--white work-hero__container corner-smooth-50">
         <div class="work-hero__content">
           <h1 class="title3 work-hero__title">
             Очистка промышленных стоков (промывочная масляная эмульсия)
@@ -170,15 +170,22 @@
             </p>
           </div>
         </div>
-        <div class="work-hero__img">
-          <img src="./img/works/03-cover.webp" alt="" />
+        <div class="work-hero__img corner-smooth-50">
+          <picture>
+            <source
+              srcset="./img/works/03-cover-mob.webp"
+              type="image/webp"
+              media="(max-width: 768px)"
+            />
+            <img src="./img/works/03-cover.webp" alt="" />
+          </picture>
         </div>
       </div>
     </div>
   </div>
   <div class="work-hero__block">
     <div class="container">
-      <div class="text-block work-hero__descript">
+      <div class="text-block work-hero__descript corner-smooth-50">
         <h4 class="title4 work-hero__capture">
           Работы: Выполняемые работы: Реконструкция очистных сооружений
           производственных сто&shy;ков (промывочная масляная эмульсия), объёмом
@@ -262,35 +269,93 @@
   <div class="gallery__slider swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/01.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/01.webp"
+        >
           <img src="./img/gallery/01.webp" alt="" />
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/02.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/02.webp"
+        >
           <img src="./img/gallery/02.webp" alt="" />
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/03.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/03.webp"
+        >
           <img src="./img/gallery/03.webp" alt="" />
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/04.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/04.webp"
+        >
           <img src="./img/gallery/04.webp" alt="" />
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/05.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/05.webp"
+        >
           <img src="./img/gallery/05.webp" alt="" />
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="gallery__item" data-src="./img/gallery/06.webp">
+        <div
+          class="gallery__item corner-smooth-50"
+          data-src="./img/gallery/06.webp"
+        >
           <img src="./img/gallery/06.webp" alt="" />
         </div>
       </div>
+    </div>
+  </div>
+  <div class="gallery__bottom container">
+    <button
+      class="btn-reset btn btn--white gallery__btn"
+      data-fancybox="gallery"
+    >
+      Открыть галерею
+    </button>
+    <div class="gallery__control gallery__control--mob control">
+      <button class="btn-reset control__btn control__btn--prev gallery-prev">
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <button class="btn-reset control__btn control__btn--next gallery-next">
+        <svg
+          width="13"
+          height="20"
+          viewBox="0 0 13 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.5 19L1.58259 10.0743C1.53845 10.0346 1.53845 9.9654 1.58259 9.92567L11.5 1"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </section>

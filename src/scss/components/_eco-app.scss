@@ -9,13 +9,20 @@
     &:not(:last-child) {
       margin-bottom: 3rem;
     }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__img {
     border-radius: 5rem;
     overflow: hidden;
     position: relative;
-
+    @include mobile {
+      height: 31.5rem;
+    }
     img {
       position: absolute;
       left: 0;
@@ -27,16 +34,27 @@
 
   &__content {
     padding: 7.2rem 8rem;
+    @include mobile {
+      padding: 5.5rem 4rem;
+    }
   }
 
   &__title {
     margin-bottom: 2.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__col {
@@ -44,12 +62,19 @@
     overflow: hidden;
     background-color: var(--white);
     padding: 7.2rem 8rem;
+    @include mobile {
+      padding: 5rem 4rem;
+    }
   }
 }
 
 .ea-item {
   &__title {
     margin-bottom: 2.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      line-height: 1.2;
+    }
   }
   &__desc {
     &:not(:last-child) {

@@ -1,14 +1,26 @@
 .works {
   padding-top: 15.9rem;
   padding-bottom: 5rem;
+  @include mobile {
+    padding-top: 14.5rem;
+  }
   &__title {
     margin-bottom: 7rem;
+    @include mobile {
+      margin-bottom: 3rem;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 3rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 }
 
@@ -19,7 +31,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
+  @include mobile {
+    flex-direction: column-reverse;
+    height: auto;
+  }
   @include hover {
     .w-item__img {
       max-height: 38rem;
@@ -36,6 +51,11 @@
 
     border-radius: 5rem;
     overflow: hidden;
+    @include mobile {
+      height: 26rem;
+      flex: unset;
+      flex-shrink: 0;
+    }
     img {
       display: block;
       width: 100%;
@@ -50,20 +70,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mobile {
+      padding: 5.7rem 4rem;
+    }
   }
 
   &__title {
     letter-spacing: -0.012em;
     margin-bottom: 2.7rem;
+    @include mobile {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__desc {
+    @include mobile {
+      font-size: 1.6rem;
+    }
   }
 
   &__btn {
     width: 100%;
-
-    &::before {
-      content: "";
+    @include mobile {
       position: absolute;
       inset: 0;
+      opacity: 0;
     }
   }
 }

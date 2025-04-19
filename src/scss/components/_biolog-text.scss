@@ -18,3 +18,14 @@
     }
   }
 }
+
+.biolog-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.biolog-mf {
+  @include mobile {
+    order: -1;
+  }
+}

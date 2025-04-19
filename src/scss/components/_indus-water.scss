@@ -1,14 +1,23 @@
 .indus-water {
   padding-bottom: 5rem;
+  @include mobile {
+    padding-bottom: 4.4rem;
+  }
   &__container {
     gap: 0;
     &:nth-child(even) {
       .indus-water__img {
         order: -1;
+        @include mobile {
+          order: 1;
+        }
       }
     }
     &:not(:last-child) {
       margin-bottom: 3rem;
+      @include mobile {
+        margin-bottom: 2.8rem;
+      }
     }
   }
 
@@ -16,6 +25,9 @@
     border-radius: 5rem;
     overflow: hidden;
     position: relative;
+    @include mobile {
+      height: 36rem;
+    }
     img {
       position: absolute;
       left: 0;
@@ -27,10 +39,16 @@
 
   &__content {
     padding: 7.2rem 8rem;
+    @include mobile {
+      padding: 5.5rem 4rem;
+    }
   }
 
   &__title {
     margin-bottom: 2.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+    }
   }
 
   &__capture {

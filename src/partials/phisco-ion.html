@@ -1,7 +1,7 @@
 <section class="onaer onaer--ion">
   <div class="container">
     <div
-      class="wblock wblock--white wblock--75 onaer__container onaer__container--reverse"
+      class="wblock wblock--white wblock--75 onaer__container onaer__container--reverse corner-smooth-50"
     >
       <div class="wblock__left onaer__content">
         <div class="onaer__text">
@@ -42,8 +42,15 @@
           </div>
         </div>
       </div>
-      <div class="wblock__right onaer__img">
-        <img src="./img/ion.webp" alt="" />
+      <div class="wblock__right onaer__img corner-smooth-50">
+        <picture>
+          <source
+            srcset="./img/ion-mob.webp"
+            type="image/webp"
+            media="(max-width: 768px)"
+          />
+          <img src="./img/ion.webp" alt="" />
+        </picture>
       </div>
     </div>
   </div>

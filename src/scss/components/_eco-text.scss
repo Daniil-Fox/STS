@@ -4,7 +4,10 @@
     position: relative;
     border-radius: 5rem;
     overflow: hidden;
-
+    @include mobile {
+      height: 31.5rem;
+      order: 1;
+    }
     img {
       position: absolute;
       left: 0;
@@ -13,10 +16,19 @@
       height: 100%;
     }
   }
+  &__container {
+    @include mobile {
+      gap: 0;
+    }
+  }
 
   &__right {
     padding: 7.5rem 5rem;
     padding-bottom: 7.2rem;
+
+    @include mobile {
+      padding: 5.5rem 4rem;
+    }
   }
 
   &__desc {

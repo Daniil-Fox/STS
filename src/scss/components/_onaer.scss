@@ -1,23 +1,42 @@
 .onaer {
   padding-top: 5.2rem;
+  @include mobile {
+    padding-top: 5rem;
+  }
   &__content {
     padding: 9rem 10rem;
     padding-right: 7rem;
     padding-bottom: 9.3rem;
+
+    @include mobile {
+      padding: 2.4rem 4rem;
+    }
   }
   &__title {
     line-height: 120%;
     margin-bottom: 3.5rem;
-
+    @include mobile {
+      font-size: 3.2rem;
+      line-height: 1.1;
+      margin-bottom: 3rem;
+    }
     &--small {
       margin-bottom: 1.5rem;
+
+      @include mobile {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+      }
     }
   }
   &__img {
     border-radius: 5rem;
     overflow: hidden;
     position: relative;
-
+    @include mobile {
+      height: 51.6rem;
+      order: 1;
+    }
     img {
       position: absolute;
       left: 0;
@@ -30,6 +49,9 @@
   &__text {
     &:not(:last-child) {
       margin-bottom: 3.4rem;
+      @include mobile {
+        margin-bottom: 2.5rem;
+      }
     }
   }
   &__desc {
@@ -50,9 +72,16 @@
       .onaer__content {
         padding-left: 7rem;
         padding-right: 10rem;
+        @include mobile {
+          padding: 2.7rem 4rem;
+        }
       }
       .onaer__img {
         order: -1;
+
+        @include mobile {
+          order: 1;
+        }
       }
     }
   }

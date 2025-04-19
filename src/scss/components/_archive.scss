@@ -1,7 +1,13 @@
 .archive {
   padding-top: 15.8rem;
-
+  @include mobile {
+    padding-top: 14.5rem;
+  }
   &__title {
     margin-bottom: 7.1rem;
+    @include mobile {
+      margin-bottom: 4rem;
+      font-size: 3.2rem;
+    }
   }
 }

@@ -3,6 +3,9 @@
   &__container {
     display: flex;
     gap: 3rem;
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -12,10 +15,15 @@
     border-radius: 5rem;
     overflow: hidden;
     background-color: var(--white);
-
+    @include mobile {
+      flex: unset;
+    }
     .ssingle-razr__content {
       padding: 7.2rem 8rem;
       padding-bottom: 8.2rem;
+      @include mobile {
+        padding: 5.3rem 4rem;
+      }
     }
   }
   &__right {
@@ -23,12 +31,19 @@
     border-radius: 5rem;
     overflow: hidden;
     background-color: var(--white);
+    @include mobile {
+      flex: unset;
+    }
   }
 
   &__img {
     height: 35.8rem;
     border-radius: 5rem;
     overflow: hidden;
+
+    @include mobile {
+      height: 28rem;
+    }
     img {
       display: block;
       width: 100%;
@@ -39,9 +54,24 @@
   &__content {
     padding: 7.2rem 6rem;
     padding-bottom: 8.2rem;
+    @include mobile {
+      padding: 5.2rem 4rem;
+      padding-bottom: 6.1rem;
+    }
   }
 
   &__title {
     margin-bottom: 2.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      margin-bottom: 2.8rem;
+    }
+  }
+  &__desc {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 }

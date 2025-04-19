@@ -1,13 +1,24 @@
 .types {
   padding-top: 15.9rem;
   padding-bottom: 5rem;
+  @include mobile {
+    padding-top: 14.3rem;
+  }
   &__title {
     margin-bottom: 7rem;
+    @include mobile {
+      margin-bottom: 3.2rem;
+    }
   }
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 3rem;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
 
   &__item {
@@ -22,6 +33,9 @@
       .types__img {
         max-height: 44rem;
       }
+    }
+    @include mobile {
+      height: 51.6rem;
     }
   }
   &__link {
@@ -38,6 +52,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 6rem;
+    @include mobile {
+      padding: 3.5rem 4rem;
+    }
   }
   &__btn {
     width: 14rem;
@@ -46,9 +63,13 @@
     height: 4rem;
     padding: 1rem 3rem;
     background: var(--grey-1);
+    display: none;
   }
   &__capture {
     font-weight: 600;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
   &__img {
     flex-shrink: 0;
@@ -59,6 +80,10 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in;
     will-change: max-height;
+
+    @include mobile {
+      max-height: 41.5rem;
+    }
     img {
       display: block;
       width: 100%;

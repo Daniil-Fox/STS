@@ -5,6 +5,10 @@
     border-radius: 5rem;
     overflow: hidden;
     position: relative;
+    @include mobile {
+      height: 31.5rem;
+      order: 1;
+    }
     img {
       position: absolute;
       left: 0;
@@ -18,9 +22,17 @@
     padding: 7.2rem 5rem;
     padding-right: 8rem;
     padding-bottom: 9.2rem;
+    @include mobile {
+      padding: 2.4rem 4rem;
+      padding-bottom: 6.2rem;
+    }
   }
 
   &__title {
     margin-bottom: 2.6rem;
+    @include mobile {
+      font-size: 3.2rem;
+      max-width: 80%;
+    }
   }
 }

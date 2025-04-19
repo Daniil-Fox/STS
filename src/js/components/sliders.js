@@ -27,6 +27,14 @@ new Swiper(".gallery__slider", {
     prevEl: ".gallery-prev",
     nextEl: ".gallery-next",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    769: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 window.addEventListener("DOMContentLoaded", () => {
